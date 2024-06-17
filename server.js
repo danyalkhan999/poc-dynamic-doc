@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(fileUpload());
 
 app.use('/documents', documentRoutes);
-app.use(express.static(path.join(__dirname, '../client/dist')));
+// app.use(express.static(path.join(__dirname, '../client/dist')));
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
